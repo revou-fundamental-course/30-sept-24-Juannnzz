@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Konversi Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Kalkulator Konversi Suhu</h1>
+        <hr>
+    </header>
+    <main>
+       <!-- Intruksi + Form Kalkulator Suhu--> 
+        <section>           
+            <article>
+                <p>Masukkan suhu derajat Celcius(&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk
+                   mendapatkan hasil konversi dalam bentuk Fahrenheit(&deg;F)</p>
+            </article>
+            <form>
+                <div>
+                    <label for="input-suhu">Celcius:</label>
+                </div>
+
+                <textarea name="" id="input-suhu"></textarea>
+
+                <div>
+                    <button class="form-button-submit">Konversi</button>
+                    <button class="form-button-reset">Reset</button>
+                    <button class="form-button-reverse">Reverse</button>
+                </div>
+                
+            </form>
+            <!-- Hasil Inputan -->
+            <div>
+                <label for="hasil-suhu">Farenheit(&deg;F):</label>
+            </div>
+
+                <textarea name="hasil-suhu" id=""></textarea>
+
+            <!-- Cara Kalkulasi -->
+            <div>
+                <label for="how-to-suhu">Cara Kalkulasi</label>
+            </div>
+
+                <textarea name="" id="cara-suhu"></textarea>
+        </section>
+
+        <!-- Informasi Catatan -->
+        <section>
+            <h1>Cara Konversi Celcius (&deg;C) ke Farenheit (&deg;F)</h1>
+            <hr>
+            <article>
+                <p>suhu <span class="suhu-style">S</span> dalam derajat Farenheit (&deg;F) sama dengan suhu
+                <span class="suhu-style">S</span> dalam derajat <br>Celcius (&deg;C) kali 9/5 tambah 32.</p>
+            </article>
+
+            <article>
+                <p><span class="suhu-style">S</span> (&deg;F) = (<span class="suhu-style">S</span> (&deg;C) x 9/5) + 32
+                    <br><br>atau<br><br> <span class="suhu-style">S</span> (&deg;F) = (<span class="suhu-style">S</span> (&deg;C) x 1.8)
+                    + 32</p>              
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Juan Gunawan. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
