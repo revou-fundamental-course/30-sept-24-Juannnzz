@@ -14,57 +14,51 @@
         <hr>
     </header>
     <main>
-       <!-- Intruksi + Form Kalkulator Suhu--> 
-        <section>           
+        <section>
+            <h1>Form Konversi Celcius (&deg;C) ke Farenheit (&deg;F)</h1>
             <article>
-                <p>Masukkan suhu derajat Celcius(&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk
-                   mendapatkan hasil konversi dalam bentuk Fahrenheit(&deg;F)</p>
+                <p id="instruction">Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol Konversi
+                    untuk mendapatkan
+                    hasil konversi dalam bentuk Fahrenheit (&deg;F)</p>
             </article>
-            <form>
+            <form id="temp-form">
                 <div>
-                    <label for="input-suhu">Celcius:</label>
+                    <label for="celsius">Celcius(&deg;C):</label>
                 </div>
-
-                <textarea name="" id="input-suhu"></textarea>
-
+                <textarea id="celsius" required placeholder="Suhu Celcius(&deg;C)"></textarea>
                 <div>
-                    <button class="form-button-submit">Konversi</button>
-                    <button class="form-button-reset">Reset</button>
-                    <button class="form-button-reverse">Reverse</button>
+                    <button type="button" id="konversiButton" class="form-button-submit">Konversi</button>
+                    <button type="reset" id="resetButton" class="form-button-reset">Reset</button>
+                    <button type="button" id="reverseButton" class="form-button-reverse"
+                        onclick="reverseConvert()">Reverse</button>
                 </div>
-                
             </form>
-            <!-- Hasil Inputan -->
             <div>
-                <label for="hasil-suhu">Farenheit(&deg;F):</label>
+                <label for="fahrenheit">Fahrenheit (&deg;F):</label>
             </div>
-
-                <textarea name="hasil-suhu" id=""></textarea>
-
-            <!-- Cara Kalkulasi -->
+            <textarea id="fahrenheit" readonly required placeholder="Suhu Fahrenheit(&deg;F)"></textarea>
             <div>
-                <label for="how-to-suhu">Cara Kalkulasi</label>
+                <label for="caraKalkulasi">Cara Kalkulasi:</label>
             </div>
-
-                <textarea name="" id="cara-suhu"></textarea>
+            <textarea id="caraKalkulasi" readonly required placeholder="Cara dari Konversi atau Reversi"></textarea>
         </section>
 
-        <!-- Informasi Catatan -->
         <section>
             <h1>Cara Konversi Celcius (&deg;C) ke Farenheit (&deg;F)</h1>
             <hr>
             <article>
-                <p>suhu <span class="suhu-style">S</span> dalam derajat Farenheit (&deg;F) sama dengan suhu
-                <span class="suhu-style">S</span> dalam derajat <br>Celcius (&deg;C) kali 9/5 tambah 32.</p>
+                <p id="instruction-cara">Suhu <span class="suhu-style">S</span> dalam derajat Fahrenheit (&deg;F) sama
+                    dengan suhu
+                    <span class="suhu-style">S</span> dalam derajat Celcius (&deg;C) kali 9/5 tambah 32.
+                </p>
             </article>
-
             <article>
                 <p><span class="suhu-style">S</span> (&deg;F) = (<span class="suhu-style">S</span> (&deg;C) x 9/5) + 32
-                    <br><br>atau<br><br> <span class="suhu-style">S</span> (&deg;F) = (<span class="suhu-style">S</span> (&deg;C) x 1.8)
-                    + 32</p>              
+                    <br><br>atau<br><br> <span class="suhu-style">S</span> (&deg;F) = (<span class="suhu-style">S</span>
+                    (&deg;C) x 1.8) + 32
+                </p>
             </article>
         </section>
-
     </main>
     <footer>
         <p>&copy; 2024 Juan Gunawan. All Rights Reserved.</p>
